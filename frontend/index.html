@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translator</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Language Translator</h1>
+        
+        <div class="translation-container">
+            <!-- Source Text Section -->
+            <div class="text-box">
+                <div class="language-controls">
+                    <select id="sourceLanguage">
+                        <option value="auto">Detect Language</option>
+                        <!-- Languages will be added via JavaScript -->
+                    </select>
+                    <button id="clearSource" class="icon-button" title="Clear text">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <textarea 
+                    id="sourceText" 
+                    placeholder="Enter text to translate..."
+                    spellcheck="false"
+                ></textarea>
+            </div>
+
+            <!-- Swap Languages Button -->
+            <button id="swapLanguages" class="swap-button" title="Swap languages">
+                <i class="fas fa-exchange-alt"></i>
+            </button>
+
+            <!-- Target Text Section -->
+            <div class="text-box">
+                <div class="language-controls">
+                    <select id="targetLanguage">
+                        <option value="en">English</option>
+                        <!-- Languages will be added via JavaScript -->
+                    </select>
+                    <button id="copyTranslation" class="icon-button" title="Copy translation">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                </div>
+                <textarea 
+                    id="targetText" 
+                    placeholder="Translation will appear here..." 
+                    readonly
+                    spellcheck="false"
+                ></textarea>
+            </div>
+        </div>
+
+        <!-- Translate Button -->
+        <button id="translateBtn" class="translate-button">
+            <i class="fas fa-language"></i> Translate
+        </button>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
