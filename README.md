@@ -68,7 +68,7 @@ language-translator/
 1. Clone the repository:
    ```bash
    git clone https://github.com/BukuBukuChagma/CodeAlpha_Language_Translation_Tool.git
-   cd language-translator
+   cd CodeAlpha_Language_Translation_Tool
    ```
 
 2. Create and activate a virtual environment:
